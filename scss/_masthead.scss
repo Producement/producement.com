@@ -5,8 +5,11 @@ header.masthead {
     min-height: auto;
     text-align: center;
     color: white;
-    background-image: url('../img/header.jpg');
-    background-position: center;
+    background: linear-gradient(
+                    rgba(20, 20, 20, .6),
+                    rgba(20, 20, 20, .6)),
+                    url('../img/tallinn.jpg') center;
+
     @include background-cover;
     .header-content {
         position: relative;
@@ -30,6 +33,36 @@ header.masthead {
                 margin-bottom: 50px;
                 color: fade-out(white, .3);
             }
+        }
+        &__logo {
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        @keyframes blinking-cursor {
+            0% {
+                opacity: 0;
+            }
+            48% {
+                opacity: 0;
+            }
+            49% {
+                opacity: 0.9;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .blinking-cursor {
+            background: $theme-primary;
+            display: inline-block;
+            width: 4px;
+            height: 22px;
+            margin-left: 2px;
+            top: 5px;
+            position: relative;
+            animation: blinking-cursor 1.1s linear infinite;
         }
     }
     @media (min-width: 768px) {
