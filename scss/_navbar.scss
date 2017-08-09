@@ -13,6 +13,11 @@
         &:focus {
             color: darken($theme-primary, .1);
         }
+        img {
+            max-height: 1rem;
+            max-width: 1rem;
+            vertical-align: baseline;
+        }
     }
     .navbar-toggle {
         font-size: 12px;
@@ -49,6 +54,13 @@
             &:hover,
             &:focus {
                 color: white;
+            }
+            img {
+                opacity: .7;
+            }
+            &:hover img,
+            &:focus img {
+                opacity: 1;
             }
         }
         .navbar-nav > li.nav-item > a.nav-link,

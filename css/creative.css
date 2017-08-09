@@ -94,6 +94,10 @@ body {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
       color: #f05f40; }
+    #mainNav .navbar-brand img {
+      max-height: 1rem;
+      max-width: 1rem;
+      vertical-align: baseline; }
   #mainNav .navbar-toggle {
     font-size: 12px;
     font-weight: 700;
@@ -123,6 +127,11 @@ body {
         color: rgba(255, 255, 255, 0.7); }
         #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
           color: white; }
+        #mainNav .navbar-brand img {
+          opacity: .7; }
+        #mainNav .navbar-brand:hover img,
+        #mainNav .navbar-brand:focus img {
+          opacity: 1; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
         color: rgba(255, 255, 255, 0.7); }
