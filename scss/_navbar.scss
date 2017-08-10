@@ -14,9 +14,9 @@
             color: darken($theme-primary, .1);
         }
         img {
-            max-height: 1rem;
-            max-width: 1rem;
-            vertical-align: baseline;
+            max-height: 2rem;
+            max-width: 2rem;
+            vertical-align: bottom;
         }
     }
     .navbar-toggle {
