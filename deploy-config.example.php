@@ -19,7 +19,7 @@
  *
  * @var string
  */
-define('SECRET_ACCESS_TOKEN', 'BetterChangeMeNowOrSufferTheConsequences');
+define('SECRET_ACCESS_TOKEN', 'BetterChangeMeNowOrSufferTheConsequences'); // change me
 
 /**
  * The address of the remote Git repository that contains the code that's being
