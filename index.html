@@ -28,13 +28,6 @@
 
     <title>Producement - Customer-centric product engineering</title>
 
-    <!-- Bootstrap core CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-
     <!-- Custom fonts for this template -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -42,12 +35,14 @@
       type="text/css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather:300,400"
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- Bootstrap core CSS -->
     <link
-      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -69,19 +64,38 @@
     </style>
 
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '757295554623754');
-        fbq('track', 'PageView');
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      );
+      fbq('init', '757295554623754');
+      fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-                   src="https://www.facebook.com/tr?id=757295554623754&ev=PageView&noscript=1"
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=757295554623754&ev=PageView&noscript=1"
     /></noscript>
 
     <script>
@@ -338,20 +352,20 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <div class="call-to-action bg-dark">
-      <div class="container text-center">
-        <p>
-          “Erko and Jordan didn't ask what's the tech-stack when they responded
-          to the Tuleva sprint ad. They immersed themselves in the mission of
-          Tuleva, helped to ruthlessly prioritize tasks and only then went on to
-          build the web application. Thanks to them, Tuleva now not only has
-          working software but also a system to prioritize tasks and plan work.”
-        </p>
-        <p>- Tõnu Pekk, Tuleva</p>
+      <div class="call-to-action bg-dark">
+        <div class="container text-center">
+          <p>
+            “Erko and Jordan didn't ask what's the tech-stack when they
+            responded to the Tuleva sprint ad. They immersed themselves in the
+            mission of Tuleva, helped to ruthlessly prioritize tasks and only
+            then went on to build the web application. Thanks to them, Tuleva
+            now not only has working software but also a system to prioritize
+            tasks and plan work.”
+          </p>
+          <p>- Tõnu Pekk, Tuleva</p>
+        </div>
       </div>
-    </div>
+    </section>
 
     <section id="team">
       <div class="container">
