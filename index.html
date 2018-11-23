@@ -48,7 +48,7 @@
     />
 
     <!-- Custom styles for this template -->
-    <link href="css/creative.min.css?20170810" rel="stylesheet" />
+    <link href="css/creative.min.css?20181123" rel="stylesheet" />
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -508,9 +508,17 @@
       </div>
     </section>
 
+    <!--
+      Hack to get rid of Tether dependency, which is only used in tooltips
+    -->
+    <script>
+      window.Tether = function() {
+        throw new Error('Your Bootstrap may actually need Tether.');
+      };
+    </script>
+
     <!-- Bootstrap core JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
